@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.banner {
+    max-width: 100%;
+    width: 100vw;
+}
+
+.burguer-menu {
+    text-align: center;
+    margin: auto;
+}
+
+.burguer-menu i {
+    background-color: #03264C;
+    color: white;
+    padding: 5px;
+}
+
+.img-producto {
+    width: 80%;
+    max-width: 100%;
+}
