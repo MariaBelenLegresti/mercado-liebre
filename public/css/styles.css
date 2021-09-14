@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -7,6 +11,11 @@ header {
     background-color: #EAC926;
     width: 100vw;
     max-width: 100%;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .banner {
@@ -23,9 +32,42 @@ header {
     background-color: #03264C;
     color: white;
     padding: 5px;
+    border-radius: 3px;
 }
 
 .img-producto {
     width: 80%;
     max-width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.nombre-producto {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-caja i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 24px;
 }
