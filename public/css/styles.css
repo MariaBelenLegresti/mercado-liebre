@@ -35,9 +35,10 @@ ul {
     border-radius: 3px;
 }
 
+
 /*-----------MAIN SECTION - Basado en tus últimas búsquedas + Ofertas!!-------------------*/
 .cada-producto {
-    margin: 10px;
+    margin: 10px 10px 0px; /*--------------------------------ESTA LINEA ES LA QUE ME MOLESTA//PREGUNTAR A GUIDO--------------*/
     background-color: white;
     padding: 10px;
     text-align: center;
@@ -64,6 +65,8 @@ main {
 
 .titulares {
     font-size: 24px;
+    color: #666;
+    padding-left: 10px;
 }
 
 .precio {
@@ -95,24 +98,27 @@ footer {
     padding: 10px;
 }
 
-.footer-caja {
+.cada-section {
     margin-bottom: 10px;
     line-height: 15px;
 }
 
-.footer-caja h3 {
+.cada-section h3 {
     font-size: 16px;
-    margin-bottom: 5px;
+    margin: 0px;
+    color:#666;
 }
 
-.footer-caja i {
+.cada-section i {
     color: #1259c3;
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 footer p {
     line-height: 18px;
+    margin: 5px;
+    color: #666;
 }
 
 .copyright {
@@ -127,6 +133,10 @@ footer p {
 
 @media (max-width: 320px) {
     .barra-navegacion {
+        display: none;
+    }
+
+    .nombre-producto {
         display: none;
     }
 }
