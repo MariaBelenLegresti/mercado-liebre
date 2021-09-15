@@ -15,29 +15,34 @@
 <body>
     <header>
         <!---LOGO // SIEMPRE ENVOLVER IMG EN DIVS!!!!!!!!!!!--> 
-        <div class="logo">
-            <img src="/images/logo-mercado-liebre.svg" alt="logo">
-        </div>
-        
-        <!---BARRA DE BÚSQUEDA-->
-        <div>
-            <input type="text" id="name"/>
-            <i class="fas fa-search"></i>
-        </div>
+        <div class="header-logo">
+            <div class="logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="logo">
+            </div>
+            
+            <!---BARRA DE BÚSQUEDA-->
+            <div>
+                <input type="text" id="name"/>
+                <i class="fas fa-search"></i>
+            </div>
 
-        <!---Mensaje - ¿Título? ¿Párrafo???-->
-        <div>
-            <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+            <!---Mensaje - ¿Título? ¿Párrafo???-->
+            <div>
+                <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
         </div>
 
         <!---NAVEGACIÓN-->
         <div class="barra-navegacion">
             <nav>
-                <ul>
+                <ul class="left-navbar">
                     <li> <a href="">Ofertas</a></li>
                     <li> <a href="">Tiendas Oficiales</a></li>
                     <li> <a href="">Vender</a></li>
                     <li> <a href="">Ayuda</a></li>
+                </ul>
+
+                <ul class="right-navbar">
                     <li> <a href="">Creá tu cuenta</a> <i class="fas fa-address-card"></i> </li>
                     <li> <a href="">Ingresá</a> <i class="fas fa-sign-in-alt"></i> </li>
                     <li> <a href="">Mis Compras</a> <i class="fas fa-shopping-cart"></i> </li>
@@ -166,7 +171,7 @@
 
         <!---TERCERA SECCIÓN-->
         <section class="cada-section">
-            <i class="fas fa-gift"></i>
+            <i class="fas fa-user-shield"></i>
             <h3 class="titulo-footer">Seguridad, de principio a fin</h3>
             <p class="descripcion">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
         </section>

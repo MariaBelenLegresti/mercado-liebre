@@ -6,7 +6,15 @@
     font-size: 12px;
 }
 
-/*-----------HEADER + BANNER-------------------*/
+/*-----------HEADER + BARRAS DE NAVAEGACION-----------------------*/
+
+/* -----------ESTA LÍNEA DE CÓDIGO HACE QUE DESAPAREZCA EL LOGO!! PREGUNTAR A GUIDO!!!!!!!!!!!!!!-----------
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+}*/
+
+
 header {
     background-color: #EAC926;
     width: 100vw;
@@ -14,18 +22,21 @@ header {
     padding: 10px;
 }
 
-ul {
+.barra-navegacion ul {
     list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
-.banner {
-    max-width: 100%;
-    width: 100vw;
+.barra-navegacion a {
+    text-decoration: none;
+    display: inline-block;
+    color:#222222;
 }
 
+/*-----------MENÚ HAMBURGUESA!!!-------------------*/
 .burguer-menu {
     text-align: center;
-    margin: auto;
 }
 
 .burguer-menu i {
@@ -33,12 +44,27 @@ ul {
     color: white;
     padding: 5px;
     border-radius: 3px;
+    text-align: center;
+    margin: auto;
 }
 
+/*-----------BANNER!-------------------*/
+.banner {
+    max-width: 100%;
+    width: 100vw;
+}
 
 /*-----------MAIN SECTION - Basado en tus últimas búsquedas + Ofertas!!-------------------*/
+main {
+    background-color: #ebebeb;
+}
+
+section {
+    padding: 10px;
+}
+
 .cada-producto {
-    margin: 10px 10px 0px; /*--------------------------------ESTA LINEA ES LA QUE ME MOLESTA//PREGUNTAR A GUIDO--------------*/
+    margin: 10px; /*--------------------------------ESTA LINEA ES LA QUE ME MOLESTA//PREGUNTAR A GUIDO--------------*/
     background-color: white;
     padding: 10px;
     text-align: center;
@@ -52,10 +78,6 @@ ul {
 
 .informacion-productos p {
     margin-bottom: 10px;
-}
-
-main {
-    background-color: #ebebeb;
 }
 
 .img-producto {
@@ -125,18 +147,27 @@ footer p {
     text-align: left;
 }
 
-@media (min-width: 361px) {
+/*------QUE TENGA SOMBREADO A PARTIR DE TABLET** 481 EN ADELANTE-------------*/
+@media (min-width: 481px) {
     .cada-producto {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
-@media (max-width: 320px) {
+/*------QUE DESAPAREZCA LA BARRA DE NAVEGACION Y QUEDE SOLO LA HAMBURGUESA EN MOVILES NADA MAS-------------*/
+@media (max-width: 480px) {
     .barra-navegacion {
         display: none;
     }
 
     .nombre-producto {
+        display: none;
+    }
+}
+
+/*------QUE DESAPAREZCA LA HAMBURGUESA DESAAPREZCA EN TABLET EN ADELANTE-------------*/
+@media (min-width: 481px) {
+    .burguer-menu {
         display: none;
     }
 }
