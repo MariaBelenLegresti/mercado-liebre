@@ -1,12 +1,12 @@
+/*-----------SELECTOR UNIVERAL-------------------*/
+
 * {
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
 
+/*-----------HEADER + BANNER-------------------*/
 header {
     background-color: #EAC926;
     width: 100vw;
@@ -35,13 +35,31 @@ ul {
     border-radius: 3px;
 }
 
+/*-----------MAIN SECTION - Basado en tus últimas búsquedas + Ofertas!!-------------------*/
+.cada-producto {
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.informacion-productos {
+    background-color: white;
+    text-align: left;
+    margin: 10px;
+}
+
+.informacion-productos p {
+    margin-bottom: 10px;
+}
+
+main {
+    background-color: #ebebeb;
+}
+
 .img-producto {
     width: 80%;
     max-width: 100%;
-}
-
-footer {
-    text-align: center;
 }
 
 .titulares {
@@ -61,6 +79,32 @@ footer {
     font-weight: bold;
 }
 
+.camion i {
+    color: #39b54a;
+    border-radius: 100%;
+    border: solid 1px #39b54a;
+    padding: 10px;
+}
+
+
+
+/*---------------FOOTER!-------------------*/
+footer {
+    text-align: center;
+    background-color: #ebebeb;
+    padding: 10px;
+}
+
+.footer-caja {
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+
+.footer-caja h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
 .footer-caja i {
     color: #1259c3;
     font-size: 2em;
@@ -68,6 +112,21 @@ footer {
 }
 
 footer p {
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 18px;
+}
+
+.copyright {
+    text-align: left;
+}
+
+@media (min-width: 361px) {
+    .cada-producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (max-width: 320px) {
+    .barra-navegacion {
+        display: none;
+    }
 }
