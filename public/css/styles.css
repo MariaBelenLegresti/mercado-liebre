@@ -11,6 +11,7 @@
 .header-logo {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .logo {
@@ -186,6 +187,10 @@ footer p {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .navbar-left {
+
     }
 }
 
