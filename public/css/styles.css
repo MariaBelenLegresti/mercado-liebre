@@ -10,11 +10,11 @@
 
 .header-logo {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.logo {
+.logo img {
     width: 80%;
 }
 
@@ -25,13 +25,17 @@ header {
     padding: 10px;
 }
 
-.barra-navegacion ul {
+.navbar {
+    margin: 10px;
+}
+
+.navbar ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
 
-.barra-navegacion a {
+.navbar a {
     text-decoration: none;
     display: inline-block;
     color:#222222;
@@ -79,7 +83,7 @@ section {
 }
 
 .cada-producto {
-    margin: 10px; /*--------------------------------ESTA LINEA ES LA QUE ME MOLESTA//PREGUNTAR A GUIDO--------------*/
+    margin: 10px;
     background-color: white;
     padding: 10px;
     text-align: center;
@@ -89,15 +93,16 @@ section {
     background-color: white;
     text-align: left;
     margin: 10px;
+}
+
+.precio-descuento {
     display: flex;
+    align-items: center;
+    justify-content:left
 }
 
-.informacion-productos .precio {
-    flex-wrap: 30;
-}
-
-.informacion-productos .descuentos {
-    flex-wrap: 70;
+.precio-descuento p {
+    margin-right: 10px;
 }
 
 .informacion-productos p {
@@ -121,6 +126,7 @@ section {
 
 .descuentos {
     font-size: 16px;
+    color: #39b54a;
 }
 
 .nombre-producto {
@@ -136,8 +142,6 @@ section {
     position: absolute;
     right: 50px;
 }
-
-
 
 /*---------------FOOTER!-------------------*/
 footer {
@@ -173,6 +177,17 @@ footer p {
     text-align: left;
 }
 
+/*------SOLO VERSION MOBILE** HASTA 480PX-------------*/
+@media (max-width: 480px) {
+    .navbar {
+        display: none;
+    }
+
+    .nombre-producto {
+        display: none;
+    }
+}
+
 /*------A PARTIR DE TABLET** 481 EN ADELANTE-------------*/
 @media (min-width: 481px) {
     .cada-producto {
@@ -183,24 +198,60 @@ footer p {
         display: none;
     }
 
-    .barra-navegacion {
+    .navbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .navbar-left {
+    .left-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
 
+    .right-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
     }
 }
 
-/*------SOLO VERSION MOBILE** HASTA 480PX-------------*/
-@media (max-width: 480px) {
-    .barra-navegacion {
-        display: none;
+/*------SOLO TABLET ENTRE 481 Y 1024**-----------------*/
+@media (min-width: 481px) and (max-width: 1024px) {
+    .section-visita {
+        display: flex;
+        justify-content: space-around;
     }
 
-    .nombre-producto {
-        display: none;
+    .section-ofertas {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .camion i {
+        position: relative;
+        left: 120px;
+        bottom: 10px;
+    }
+}
+
+/*------A PARTIR DE DESKTOP** 1025 EN ADELANTE-------------*/
+@media (min-width: 1025px) {
+    .section-visita {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section-ofertas {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .div-footer {
+        display: flex;
+        justify-content: space-around;
     }
 }
