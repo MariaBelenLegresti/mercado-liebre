@@ -9,9 +9,7 @@
 /*-----------HEADER + BARRAS DE NAVAEGACION-----------------------*/
 
 .copy p {
-    margin: 0px 10px;
-    text-align: right;
-    min-width: 150px;
+    margin: 10px 10px 0px;
 }
 
 .header-logo {
@@ -63,6 +61,7 @@ header {
 /*-----------MENÚ HAMBURGUESA!!!-------------------*/
 .burguer-menu {
     text-align: center;
+    margin: 10px 0px 0px 0px;
 }
 
 .burguer-menu i {
@@ -81,7 +80,7 @@ header {
 }
 
 /*-----------MAIN SECTION - Basado en tus últimas búsquedas + Ofertas!!-------------------*/
-main {
+body {
     background-color: #ebebeb;
 }
 
@@ -92,16 +91,15 @@ section {
 .cada-producto {
     margin: 10px;
     background-color: white;
-    padding: 10px;
     text-align: center;
-    width: 320px;
 }
 
 .informacion-productos {
     background-color: white;
     text-align: left;
-    margin: 10px;
     position: relative;
+    border-top: solid 1px #ebebeb;
+    padding: 0px 15px;
 }
 
 .precio-descuento {
@@ -202,12 +200,19 @@ footer p {
     .nombre-producto {
         display: none;
     }
+
+    .header-logo {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
 
 /*------A PARTIR DE TABLET** 481 EN ADELANTE-------------*/
 @media (min-width: 481px) {
     .cada-producto {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 320px;
     }
 
     .burguer-menu {
