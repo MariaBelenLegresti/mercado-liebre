@@ -8,9 +8,15 @@
 
 /*-----------HEADER + BARRAS DE NAVAEGACION-----------------------*/
 
+.copy p {
+    margin: 0px 10px;
+    text-align: right;
+    min-width: 150px;
+}
+
 .header-logo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -39,6 +45,7 @@ header {
     text-decoration: none;
     display: inline-block;
     color:#222222;
+    margin: 0px 5px;
 }
 
 .busqueda {
@@ -87,12 +94,14 @@ section {
     background-color: white;
     padding: 10px;
     text-align: center;
+    width: 320px;
 }
 
 .informacion-productos {
     background-color: white;
     text-align: left;
     margin: 10px;
+    position: relative;
 }
 
 .precio-descuento {
@@ -135,13 +144,20 @@ section {
 }
 
 .camion i {
-    color: #39b54a;
-    border-radius: 100%;
-    border: solid 1px #39b54a;
-    padding: 10px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
     position: absolute;
-    right: 50px;
-}
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+   }
+
 
 /*---------------FOOTER!-------------------*/
 footer {
@@ -220,7 +236,7 @@ footer p {
 }
 
 /*------SOLO TABLET ENTRE 481 Y 1024**-----------------*/
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 482px) and (max-width: 1024px) {
     .section-visita {
         display: flex;
         justify-content: space-around;
@@ -229,13 +245,15 @@ footer p {
     .section-ofertas {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
-    .camion i {
-        position: relative;
-        left: 120px;
-        bottom: 10px;
+    .section-visita {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
+
 }
 
 /*------A PARTIR DE DESKTOP** 1025 EN ADELANTE-------------*/
