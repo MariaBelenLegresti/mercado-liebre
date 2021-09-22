@@ -55,7 +55,6 @@ header {
     border-radius: 1px;
     padding: 1px;
     font-size: 10px;
-    border: solid #666 0.8px;
 }
 
 /*-----------MENÚ HAMBURGUESA!!!-------------------*/
@@ -245,6 +244,7 @@ footer p {
     .section-visita {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .section-ofertas {
@@ -252,13 +252,6 @@ footer p {
         justify-content: space-around;
         flex-wrap: wrap;
     }
-
-    .section-visita {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
 }
 
 /*------A PARTIR DE DESKTOP** 1025 EN ADELANTE-------------*/
