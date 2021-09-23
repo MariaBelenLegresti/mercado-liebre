@@ -191,6 +191,14 @@ footer p {
 }
 
 /*------SOLO VERSION MOBILE** HASTA 480PX-------------*/
+
+.formulario-de-registro div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+/*------SOLO VERSION MOBILE** HASTA 480PX-------------*/
 @media (max-width: 480px) {
     .navbar {
         display: none;

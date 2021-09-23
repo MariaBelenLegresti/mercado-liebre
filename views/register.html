@@ -64,39 +64,39 @@
     <main>
     
     <!------------------FORMULARIOS------------------------------------->
-        <form  action="/register" method="POST">
-            <div>
+        <form  action="/register" method="POST" class="formulario-de-registro">
+            <div class="nombre-apellido">
                 <label for="">Nombre y apellido:</label>
                 <input type="text" minlength="8">
             </div>
 
-            <div>
+            <div class="nombre-usuario">
                 <label for="">Nombre de usuario:</label>
                 <input type="text">
             </div>
 
-            <div>
+            <div class="register-email">
                 <label for="">Email:</label>
                 <input type="email">
             </div>
             
-            <div>
+            <div class="fecha-nacimiento">
                 <label for="">Fecha de nacimiento:</label>
                 <input type="date" name="fecha">
             </div>
 
-            <div>
+            <div class="domicilio">
                 <label for="">Domicilio:</label>
                 <input type="text">
             </div>
 
-            <div>
+            <div class="perfil-usuario">
                 <label for="">Perfil de usuario:</label>
                 <p><input type="radio" name="perfil-de-usuario" value="Comprador">Comprador</p>
                 <p><input type="radio" name="perfil-de-usuario" value="Vendedor">Vendedor</p>
             </div>
 
-            <div>
+            <div class="categorias-de-interes">
                 <label for="">Categorías de interés:</label>
                 <p><input type="checkbox" name="categorias-de-interes" value="Comprador">Electro</p>
                 <p><input type="checkbox" name="categorias-de-interes" value="Vendedor">Moda</p>
@@ -105,12 +105,12 @@
                 <p><input type="checkbox" name="categorias-de-interes" value="Vendedor">Vida sana</p>
             </div>
 
-            <div>
+            <div class="imagen-perfil">
                 <label>Seleccionar una imagen para el perfil:</label>
                 <input type="file" name="avatar" accept=".jpg" multiple>
             </div>
 
-            <div>
+            <div class="register-clave">
                 <label>Contraseña:</label>
                 <input type="password" name="clave">
 
@@ -118,7 +118,7 @@
                 <input type="password" name="clave">
             </div>
 
-            <div>
+            <div class="botones">
                 <button type="submit">Enviar</button>
                 <button type="reset">Volver a la página principal</button>
             </div>
