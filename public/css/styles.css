@@ -104,7 +104,7 @@ section {
 .precio-descuento {
     display: flex;
     align-items: center;
-    justify-content:left
+    justify-content: left;
 }
 
 .precio-descuento p {
@@ -131,13 +131,14 @@ section {
 }
 
 .descuentos {
-    font-size: 16px;
+    font-size: 14px;
     color: #39b54a;
 }
 
 .nombre-producto {
     font-size: 16px;
     font-weight: bold;
+    color:#666;
 }
 
 .camion i {
@@ -153,6 +154,7 @@ section {
     right: 20px;
     top: -15px;
     color: #39b54a;
+    transition: transform 2s;
    }
 
 
@@ -178,6 +180,7 @@ footer {
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 5px;
+    transition: color 2s;
 }
 
 footer p {
@@ -218,9 +221,36 @@ footer p {
 /*------A PARTIR DE TABLET** 481 EN ADELANTE-------------*/
 @media (min-width: 481px) {
     .cada-producto {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 320px;
+        transition: all 0.5s;
     }
+
+    .cada-producto:hover /*.cada-producto*/{ /*ESTO LO AGREGO CUANDO QUIERO MODIFICAR OTRO SELECTOR QUE NO ES AL QUE LE PASE EL MOUSE POR ENCIMA*/
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 330px;
+    }
+
+    .nombre-producto {
+        position: relative;
+        bottom: 40px;
+        z-index: -1;
+        transition: all 1s;
+    }
+
+    .cada-producto:hover .nombre-producto {
+        position: relative;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+    /* .informacion-productos {
+        transition: height 0.5s;
+        height: 50px;
+    }
+
+    .informacion-productos:hover { NO PUEDO HACER QUE CAMBIE EL TAMAÑO
+        height: 80px;
+    } */
 
     .burguer-menu {
         display: none;
@@ -244,6 +274,14 @@ footer p {
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start;
+    }
+
+    .camion:hover i {
+        transform: rotate(-90deg);
+    }
+
+    .cada-section i:hover {
+        color: #39b54a;
     }
 }
 
