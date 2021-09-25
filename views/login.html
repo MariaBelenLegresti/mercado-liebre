@@ -22,7 +22,7 @@
             </div>
             
             <!---BARRA DE BÚSQUEDA-->
-            <form action="">
+            <form action="#" method="GET">
                 <div class="busqueda">
                     <input type="text" id="name" placeholder="Buscar productos, marcas y más"/>
                     <button type="submit"><i class="fas fa-search"></i></button>
@@ -64,22 +64,22 @@
     <main>
     
     <!------------------FORMULARIOS------------------------------------->
-        <form  action="/login" method="POST">
+        <form  action="/login" method="POST" class="formulario-de-login">
             
             <div>
                 <label for="">Nombre de usuario:</label>
-                <input type="text">
+                <input type="text" placeholder="Nombre de usuario">
             </div>
 
             <div>
                 <label>Contraseña:</label>
-                <input type="password" name="clave">
+                <input type="password" name="clave" placeholder="Contraseña">
 
             </div>
 
-            <div>
+            <div class="botones-login">
                 <button type="submit">Ingresar</button>
-                <button type="reset">Volver a la página principal</button>
+                <button type="reset">Limpiar</button>
             </div>
             
         </form>

@@ -99,6 +99,7 @@ section {
     position: relative;
     border-top: solid 1px #ebebeb;
     padding: 0px 15px;
+    align-items: center;
 }
 
 .precio-descuento {
@@ -193,13 +194,117 @@ footer p {
     text-align: left;
 }
 
-/*------SOLO VERSION MOBILE** HASTA 480PX-------------*/
+/*-------------------ACÁ EMPIEZO A MODIFICAR EL REGISTER------------------------*/
+.formulario-de-registro input[type="text"] {
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.formulario-de-registro input[type="email"] {
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.formulario-de-registro input[type="date"] {
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.formulario-de-registro input[type="password"] {
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.formulario-de-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .formulario-de-registro div {
     display: flex;
     flex-direction: column;
     margin: 15px;
+    width: 300px;
 }
+
+.formulario-de-registro label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.register-clave input {
+    margin-bottom: 15px;
+}
+
+.botones-register button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #1259c3;
+    color: white;
+    font-size: 12px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.botones-register button:hover {
+    background-color: #39b54a;
+}
+
+/*-------------------ACÁ EMPIEZO A MODIFICAR EL LOG-IN-----------------------*/
+.formulario-de-login input[type="text"] {
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.formulario-de-login input[type="password"] {
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.formulario-de-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-de-login div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 300px;
+}
+
+.formulario-de-login label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.botones-login button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #1259c3;
+    color: white;
+    font-size: 12px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.botones-login button:hover {
+    background-color: #39b54a;
+}
+
+/*-------------------ACÁ ARRANCAN LAS MEDIA QUERYS---------------------------*/
 
 /*------SOLO VERSION MOBILE** HASTA 480PX-------------*/
 @media (max-width: 480px) {
@@ -231,26 +336,33 @@ footer p {
     }
 
     .nombre-producto {
+        /* position: relative;
+        bottom: 40px;
+        z-index: -1;
+        transition: all 1s; */
         position: relative;
         bottom: 40px;
         z-index: -1;
-        transition: all 1s;
+        opacity: 0;
+        transition: all 0.5s ease-in;
     }
 
     .cada-producto:hover .nombre-producto {
         position: relative;
         bottom: 0px;
         z-index: 1;
+        opacity: 1;
     }
 
-    /* .informacion-productos {
+    .informacion-productos {
         transition: height 0.5s;
         height: 50px;
+        transition: all 0.5s ease-in;
     }
 
-    .informacion-productos:hover { NO PUEDO HACER QUE CAMBIE EL TAMAÑO
-        height: 80px;
-    } */
+    .cada-producto:hover div.informacion-productos { 
+        height: 95px;
+    }
 
     .burguer-menu {
         display: none;

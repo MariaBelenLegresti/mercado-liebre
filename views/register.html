@@ -22,7 +22,7 @@
             </div>
             
             <!---BARRA DE BÚSQUEDA-->
-            <form action="">
+            <form action="#" method="GET">
                 <div class="busqueda">
                     <input type="text" id="name" placeholder="Buscar productos, marcas y más"/>
                     <button type="submit"><i class="fas fa-search"></i></button>
@@ -67,60 +67,60 @@
         <form  action="/register" method="POST" class="formulario-de-registro">
             <div class="nombre-apellido">
                 <label for="">Nombre y apellido:</label>
-                <input type="text" minlength="8">
+                <input type="text" minlength="8" placeholder="Nombre y apellido"/>
             </div>
 
             <div class="nombre-usuario">
                 <label for="">Nombre de usuario:</label>
-                <input type="text">
+                <input type="text" placeholder="Nombre y usuario"/>
             </div>
 
             <div class="register-email">
-                <label for="">Email:</label>
-                <input type="email">
+                <label for="">E-mail:</label>
+                <input type="email" placeholder="E-mail"/>
             </div>
             
             <div class="fecha-nacimiento">
                 <label for="">Fecha de nacimiento:</label>
-                <input type="date" name="fecha">
+                <input type="date" name="fecha" placeholder="Fecha de nacimiento"/>
             </div>
 
             <div class="domicilio">
                 <label for="">Domicilio:</label>
-                <input type="text">
+                <input type="text" placeholder="Domicilio"/>
             </div>
 
             <div class="perfil-usuario">
                 <label for="">Perfil de usuario:</label>
-                <p><input type="radio" name="perfil-de-usuario" value="Comprador">Comprador</p>
-                <p><input type="radio" name="perfil-de-usuario" value="Vendedor">Vendedor</p>
+                <p><input type="radio" name="perfil-de-usuario" value="Comprador"/>Comprador</p>
+                <p><input type="radio" name="perfil-de-usuario" value="Vendedor"/>Vendedor</p>
             </div>
 
             <div class="categorias-de-interes">
                 <label for="">Categorías de interés:</label>
-                <p><input type="checkbox" name="categorias-de-interes" value="Comprador">Electro</p>
-                <p><input type="checkbox" name="categorias-de-interes" value="Vendedor">Moda</p>
-                <p><input type="checkbox" name="categorias-de-interes" value="Vendedor">Hogar</p>
-                <p><input type="checkbox" name="categorias-de-interes" value="Vendedor">Juguetería</p>
-                <p><input type="checkbox" name="categorias-de-interes" value="Vendedor">Vida sana</p>
+                <p><input type="checkbox" name="categorias-de-interes" value="Comprador"/>Electro</p>
+                <p><input type="checkbox" name="categorias-de-interes" value="Vendedor"/>Moda</p>
+                <p><input type="checkbox" name="categorias-de-interes" value="Vendedor"/>Hogar</p>
+                <p><input type="checkbox" name="categorias-de-interes" value="Vendedor"/>Juguetería</p>
+                <p><input type="checkbox" name="categorias-de-interes" value="Vendedor"/>Vida sana</p>
             </div>
 
             <div class="imagen-perfil">
                 <label>Seleccionar una imagen para el perfil:</label>
-                <input type="file" name="avatar" accept=".jpg" multiple>
+                <input type="file" name="avatar" accept=".jpg" multiple/>
             </div>
 
             <div class="register-clave">
                 <label>Contraseña:</label>
-                <input type="password" name="clave">
+                <input type="password" name="clave" placeholder="Elegí tu contraseña"/>
 
                 <label>Confirmar contraseña:</label>
-                <input type="password" name="clave">
+                <input type="password" name="clave" placeholder="Confirmar contraseña"/>
             </div>
 
-            <div class="botones">
+            <div class="botones-register">
                 <button type="submit">Enviar</button>
-                <button type="reset">Volver a la página principal</button>
+                <button type="reset">Limpiar</button>
             </div>
             
         </form>
