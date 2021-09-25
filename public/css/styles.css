@@ -7,6 +7,11 @@
 }
 
 /*-----------HEADER + BARRAS DE NAVAEGACION-----------------------*/
+.home-header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
 
 .copy p {
     margin: 10px 10px 0px;
@@ -76,9 +81,12 @@ header {
 .banner {
     max-width: 100%;
     width: 100vw;
+    height: 200px;
+    object-fit: cover;
 }
 
 /*-----------MAIN SECTION - Basado en tus últimas búsquedas + Ofertas!!-------------------*/
+
 body {
     background-color: #ebebeb;
 }
@@ -321,6 +329,16 @@ footer p {
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
+    .home-header {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+    main {
+        margin-top: 140px;
+    }
 }
 
 /*------A PARTIR DE TABLET** 481 EN ADELANTE-------------*/
@@ -397,8 +415,8 @@ footer p {
     }
 }
 
-/*------SOLO TABLET ENTRE 481 Y 1024**-----------------*/
-@media (min-width: 482px) and (max-width: 1024px) {
+/*------SOLO TABLET ENTRE 481 Y 745**-----------------*/
+@media (min-width: 482px) and (max-width: 745px) {
     .section-visita {
         display: flex;
         justify-content: space-around;
@@ -410,10 +428,14 @@ footer p {
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
+    main {
+        margin-top: 100px;
+    }
 }
 
-/*------A PARTIR DE DESKTOP** 1025 EN ADELANTE-------------*/
-@media (min-width: 1025px) {
+/*------A PARTIR DE DESKTOP** 745 EN ADELANTE-------------*/
+@media (min-width: 745px) {
     .section-visita {
         display: flex;
         justify-content: space-around;
@@ -427,5 +449,9 @@ footer p {
     .div-footer {
         display: flex;
         justify-content: space-around;
+    }
+
+    main {
+        margin-top: 115px;
     }
 }
