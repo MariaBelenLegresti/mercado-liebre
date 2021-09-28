@@ -6,7 +6,7 @@ const publicPath = path.join(__dirname, "./public");
 app.use(express.static(publicPath)); /*le digo a express que quiero tener la carpeta "public" como un 
                                        recurso de archivos estáticos; */
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Servidor corriendo en http://localhost:3000");
 });
 
