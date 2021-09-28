@@ -7,11 +7,6 @@
 }
 
 /*-----------HEADER + BARRAS DE NAVAEGACION-----------------------*/
-.home-header {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}
 
 .copy p {
     margin: 10px 10px 0px;
@@ -330,13 +325,7 @@ footer p {
         flex-wrap: wrap;
     }
 
-    .home-header {
-        position: fixed;
-        top: 0;
-        z-index: 100;
-    }
-
-    main {
+    .main-home {
         margin-top: 140px;
     }
 }
@@ -346,6 +335,7 @@ footer p {
     .cada-producto {
         width: 320px;
         transition: all 0.5s;
+        height: fit-content;
     }
 
     .cada-producto:hover /*.cada-producto*/{ /*ESTO LO AGREGO CUANDO QUIERO MODIFICAR OTRO SELECTOR QUE NO ES AL QUE LE PASE EL MOUSE POR ENCIMA*/
@@ -429,7 +419,7 @@ footer p {
         flex-wrap: wrap;
     }
 
-    main {
+    .main-home {
         margin-top: 100px;
     }
 }
@@ -451,7 +441,7 @@ footer p {
         justify-content: space-around;
     }
 
-    main {
+    .main-home {
         margin-top: 115px;
     }
 }
